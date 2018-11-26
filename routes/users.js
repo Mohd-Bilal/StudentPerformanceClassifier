@@ -10,12 +10,7 @@ router.get('/', function(req, res, next) {
       
     ]
   }
- ps.PythonShell.run('./resources/Student_Performance_Classifier/classifier.py',options,function(err,data){
-   if(!err)
-    res.send("Success"+data)
-    else
-    res.send("Error"+err)
- })
+
 
 
 });

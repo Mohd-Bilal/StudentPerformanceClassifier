@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+    </head>
+    <body>
+        <h2><%= title %></h2>
+        <form method="POST" action="/api/register">
+       <label>First Name <input type="text" name="firstname"></label><br><br>
+       <label>Last Name <input type="text" name="lastname"></label><br><br>
+
+       <label>Username <input type="text" name="username"></label><br><br>
+      <label>Password <input type="password" name="password"></label><br><br>
+      <button>Submit</button>
+    </form>
+    </body>
+
+</html>
