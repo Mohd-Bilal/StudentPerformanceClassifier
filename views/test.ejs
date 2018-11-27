@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<link href='//fonts.googleapis.com/css?family=Roboto:100,400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/test.css">
+
+</head>
+<body>
+<div class="quiz-window">
+  <div class="quiz-window-header">
+    <div class="quiz-window-title">Your Awards</div>
+    <!-- <button class="quiz-window-close">&times;</button> -->
+  </div>
+  <div class="quiz-window-body">
+    <div class="gui-window-awards">
+      <ul class="guiz-awards-row guiz-awards-header">
+        <li class="guiz-awards-header-star">&nbsp;</li>
+        <li class="guiz-awards-header-title">Roll No</li>
+        <li class="guiz-awards-header-track">Assistance</li>
+      </ul>
+      <% for(var i = 0;i<result.length; i=i+2 ) {%>
+      <ul class="guiz-awards-row guiz-awards-row-even">
+        <li class="guiz-awards-title"><%=(i+1)%></li>
+        <%if(result[i] == 0){%>
+        <li class="guiz-awards-star" ><span class="star goldstar"></span></li>
+        <%}else{%>
+        <li class="guiz-awards-star"><span class="star silverstar"></span></li>
+        <%}%>
+      </ul>
+      <ul class="guiz-awards-row">
+        <li class="guiz-awards-title"><%=(i+2)%></li>
+        <%if(result[i+1] == 0){%>
+            <li class="guiz-awards-star "><span class="star goldstar"></span></li>
+            <%}else{%>
+            <li class="guiz-awards-star "><span class="star silverstar"></span></li>
+            <%}%>
+      </ul>
+      <%}%>
+    </div>
+  </div>
+</div>
+</body>
+</html>

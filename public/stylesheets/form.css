@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 body {
     /* background: #2d343d; */
     background:#ccc;
+    font-family: 'Oswald', sans-serif;
   }
   
   .login {

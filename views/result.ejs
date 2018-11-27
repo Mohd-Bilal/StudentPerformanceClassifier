@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <link rel='stylesheet' href='/stylesheets/table.css' 
+    </head>
+    <body>
+        <h3 style="text-align:center;">Result</h3>
+        <table>
+            <tr>
+                <th>RollNo</th>
+                <th>Assistance</th>
+            </tr>
+            <% for(var i=0;i<result.length;i++) { %>
+                <tr>
+                <td><%=i+1%></td>
+                <td><%=(result[i]==0?"Required":"Not required")%></td>
+                </tr>
+            <% }%>
+        </table>    
+    </body>
+
+</html>
