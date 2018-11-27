@@ -2,17 +2,19 @@
 <html>
     <head>
         <title><%= title %></title>
-        <link rel='stylesheet' href='/stylesheets/style.css'/>
+        <link rel='stylesheet' href='/stylesheets/form.css'/>
     </head>
     <body>
-        <h2><%= title %></h2>
-        <form method="POST" action="/api/register">
-       <label>First Name <input type="text" name="firstname"></label><br><br>
-       <label>Last Name <input type="text" name="lastname"></label><br><br>
+        <form method="POST" class="login" action="/api/register">
+            <h1 class="login-title">Register</h1>
+       
+        <input class="login-input"type="text" name="firstname" placeholder="Firstname"><br><br>
+      <input class="login-input" type="text" name="lastname" placeholder="Lastname"><br><br>
 
-       <label>Username <input type="text" name="username"></label><br><br>
-      <label>Password <input type="password" name="password"></label><br><br>
-      <button>Submit</button>
+       <input class="login-input" type="text" name="username" placeholder="Username"><br><br>
+      <input class="login-input" type="password" name="password" placeholder="Password"><br><br>
+      <input type="submit" value="Upload" class="login-button">
+      
     </form>
     </body>
 
