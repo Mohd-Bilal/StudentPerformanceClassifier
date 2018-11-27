@@ -4,9 +4,11 @@ module.exports = (sequelize,DataTypes)=>{
             id:{
                 type: DataTypes.INTEGER(),
                 primaryKey:true,
-                autoIncrement:true
+                autoIncrement:true,
             },
-            username: DataTypes.STRING(40),
+            firstname:DataTypes.STRING(20),
+            lastname:DataTypes.STRING(20),
+            username:{type: DataTypes.STRING(40),unique:true},
             password:DataTypes.STRING(100)
         }
     );
